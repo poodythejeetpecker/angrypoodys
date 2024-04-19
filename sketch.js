@@ -23,6 +23,7 @@ function preload() {
   imgPumpChain = loadImage('pump_chain.png');
   imgGreenCandle = loadImage('green_candle.png');
   imgSidewaysChart = loadImage("sideways_chart.png");
+  imgAnsem = loadImage('ansem.png');
   jeetImg = loadImage('jeet.png');
 }
 
@@ -236,6 +237,11 @@ function mousePressed() {
 
     if (keyIsPressed && (key === 'e' || key === 'E')) {
       let box = new GameObject(mouseX, mouseY, 30, 100, imgGreenCandle, 1.05);
+      boxes.push(box);
+    }
+
+    if (keyIsPressed && (key === 'a' || key === 'a')) {
+      let box = new GameObject(mouseX, mouseY, 140, 190, imgAnsem, 0.4, false, true);
       boxes.push(box);
     }
 
