@@ -20,7 +20,7 @@ function preload() {
   imgWif = loadImage('wif.png');
   poodyImg = loadImage('angry2.png');
   imgRaydiumBox = loadImage('raydium_box.png');
-  imgPumpChain = loadImage('pump_chain.png');
+  imgPumpChain = loadImage('pump.png');
   imgGreenCandle = loadImage('green_candle.png');
   imgSidewaysChart = loadImage("sideways_chart.png");
   imgAnsem = loadImage('ansem.png');
@@ -69,8 +69,9 @@ function setup() {
 
   boxes.push(new GameObject(450, 650, 150, 25, imgSidewaysChart, 1.05));
   boxes.push(new GameObject(450, 620, 70, 70, imgRaydiumBox, 1.05));
-  boxes.push(new GameObject(450, 550, 20, 70, imgPumpChain, 1.05));
-  boxes.push(new GameObject(450, 490, 50, 50, jeetImg, 1.1, true, true));
+  boxes.push(new GameObject(460, 550, 20, 38, imgPumpChain, 1.05));
+    boxes.push(new GameObject(440, 550, 20, 38, imgPumpChain, 1.05));
+  boxes.push(new GameObject(451, 520, 50, 50, jeetImg, 1.1, true, true));
 
 
   boxes.push(new GameObject(800, 650, 70, 70, imgRaydiumBox, 1.05));
@@ -231,7 +232,7 @@ function mousePressed() {
     }
 
     if (keyIsPressed && (key === 'w' || key === 'W')) {
-      let box = new GameObject(mouseX, mouseY, 20, 70, imgPumpChain, 1.05);
+      let box = new GameObject(mouseX, mouseY, 20, 38, imgPumpChain, 1.05);
       boxes.push(box);
     }
 
